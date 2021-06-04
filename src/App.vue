@@ -2,7 +2,7 @@
   <div id="nav">
     <router-link to="/search">搜索</router-link> ｜
     <router-link to="/explore">发现</router-link> ｜
-    <router-link to="/login">个人中心</router-link>
+    <router-link to="/login">我的</router-link>
   </div>
   <router-view />
   <!--  <img src="../src/assets/Picture1.png" alt="hello" />-->
