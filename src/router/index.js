@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
 import Explore from "@/components/Explore";
+import search_enter from "@/components/search_enter";
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "Default",
+    component: search_enter
   },
   {
     path: "/search",
