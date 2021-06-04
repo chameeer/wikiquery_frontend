@@ -1,9 +1,26 @@
 <template>
-  <div id="nav">
-    <router-link to="/search">搜索</router-link> ｜
-    <router-link to="/explore">发现</router-link> ｜
-    <router-link to="/login">我的</router-link>
-  </div>
+  <!--  <div id="nav">-->
+  <!--    <router-link to="/search">搜索</router-link> ｜-->
+  <!--    <router-link to="/explore">发现</router-link> ｜-->
+  <!--    <router-link to="/login">我的</router-link>-->
+  <!--  </div>-->
+  <a-menu
+    theme="light"
+    mode="horizontal"
+    v-model:selectedKeys="selectedKeys"
+    :style="{ lineHeight: '64px' }"
+  >
+    <a-menu-item key="1"
+      ><router-link to="/search">搜索</router-link></a-menu-item
+    >
+    <a-menu-item key="2"
+      ><router-link to="/explore">发现</router-link></a-menu-item
+    >
+    <a-menu-item key="3"
+      ><router-link to="/login">我的</router-link></a-menu-item
+    >
+  </a-menu>
+
   <router-view />
   <!--  <img src="../src/assets/Picture1.png" alt="hello" />-->
 </template>

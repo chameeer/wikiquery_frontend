@@ -1,6 +1,11 @@
 <template>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
   <a-form
-    style="width: 80%; text-align: center; margin-left: auto; margin-right: auto "
+    style="width: 80%; text-align: center; margin: auto;"
     layout="horizontal"
     :model="formState"
     @finish="handleFinish"
@@ -26,11 +31,22 @@
     </a-form-item>
     <a-form-item>
       <a-button
+        style="width: 80%; margin-right: auto; margin-left: auto; margin: auto"
         type="primary"
         html-type="submit"
         :disabled="formState.user === '' || formState.password === ''"
       >
-        Log in
+        登录
+      </a-button>
+    </a-form-item>
+    <a-form-item>
+      <a-button
+        style="width: 80%; margin-right: auto; margin-left: auto; margin: auto"
+        type="default"
+        html-type="submit"
+        :disabled="formState.user === '' || formState.password === ''"
+      >
+        注册
       </a-button>
     </a-form-item>
   </a-form>
