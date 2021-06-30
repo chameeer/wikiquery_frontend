@@ -21,7 +21,8 @@ const routes = [
   {
     path: "/result",
     name: "Result",
-    component: () => import("../components/Result")
+    component: () => import("../components/Result"),
+    props: route => ({ q: route.query.q })
   },
   {
     path: "/explore",
