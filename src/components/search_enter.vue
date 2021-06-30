@@ -32,11 +32,12 @@
     />
   </div>
   <br />
-  <img
-    src="../../src/assets/Picture1.png"
-    alt="hello"
-    style="height: 70%; width: 70%; text-align: center"
-  />
+  <!--  <img-->
+  <!--    src="../../src/assets/Picture1.png"-->
+  <!--    alt="hello"-->
+  <!--    style="height: 70%; width: 70%; text-align: center"-->
+  <!--  />-->
+  <LogoVue></LogoVue>
 
   <br />
   <Icon style="font-size: 240px">
@@ -61,10 +62,12 @@
 <script>
 import { defineComponent, ref } from "vue";
 import Icon from "@ant-design/icons-vue";
+import LogoVue from "@/components/Logo";
 
 export default defineComponent({
   components: {
-    Icon
+    Icon,
+    LogoVue
   },
   setup() {
     const value = ref("");
