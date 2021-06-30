@@ -63,6 +63,7 @@
 import { defineComponent, ref } from "vue";
 import Icon from "@ant-design/icons-vue";
 import LogoVue from "@/components/Logo";
+import {useRouter} from "vue-router";
 
 export default defineComponent({
   components: {
@@ -70,9 +71,16 @@ export default defineComponent({
     LogoVue
   },
   setup() {
+    const router = useRouter();
     const value = ref("");
 
     const onSearch = searchValue => {
+      // window.open(
+      //   "localhost:8080/result?query=" +
+      //     searchValue +
+      //     ""
+      // );
+      router.push({ path: '/result', query: { q: searchValue } })
       console.log("use value", searchValue);
       console.log("or use this.value", value.value);
     };
