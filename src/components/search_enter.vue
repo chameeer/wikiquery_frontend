@@ -80,7 +80,7 @@ export default defineComponent({
       //     searchValue +
       //     ""
       // );
-      router.push({ path: '/result', query: { q: searchValue } })
+      router.push({ path: '/result', query: { q : searchValue} })
       console.log("use value", searchValue);
       console.log("or use this.value", value.value);
     };

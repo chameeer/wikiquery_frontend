@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Explore from "@/components/Explore";
 import search_enter from "@/components/search_enter";
 
 const routes = [
@@ -22,12 +21,13 @@ const routes = [
     path: "/result",
     name: "Result",
     component: () => import("../components/Result"),
-    props: route => ({ q: route.query.q })
+    props: route => ( route.query )
   },
   {
     path: "/explore",
     name: "Explore",
-    component: Explore
+    component: () => import("../components/Explore"),
+    props: router => (router.query)
   },
   {
     path: "/about",
